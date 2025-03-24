@@ -1,5 +1,13 @@
-import Image from "next/image";
+import { log } from "console";
+import Hello from "./components/Hello";
 
 export default function Home() {
-  return <h1 className="text-3xl">Welcome to next</h1>;
+  log("Hello, world!");
+  return (
+    <>
+      <Hello />
+      <h1 className="text-violet-500 font-bold text-4xl">Welcome to next</h1>
+      <h2>Hello, world!</h2>
+    </>
+  );
 }
