@@ -8,6 +8,7 @@ export default function Home() {
       <Hello />
       <h1 className="text-violet-500 font-bold text-4xl">Welcome to next</h1>
       <h2>Hello, world!</h2>
+      <h2>Wow</h2>
     </>
   );
 }
