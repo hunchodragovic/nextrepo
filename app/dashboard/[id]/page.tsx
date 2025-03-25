@@ -18,7 +18,7 @@ const Id: React.FC<IdProps> = ({ params: { id } }) => {
         />
         <h2 className="mt-4 text-xl font-semibold text-gray-800">User {id}</h2>
         <p className="text-gray-600">User {id}</p>
-        <Link href={`/dashboard/users/4/profile`}>
+        <Link href={`/dashboard/4/profile`}>
           <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition cursor-pointer">
             View Profile
           </button>
