@@ -25,9 +25,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
       >
-        {children}
+        {/* Main Content */}
+        <main className="w-full p-6 mr-64">{children}</main>
+
+        {/* Sidebar */}
+        <aside className="w-64 h-screen fixed right-0 top-0 bg-gray-900 text-white p-6 flex flex-col gap-4">
+          <h1 className="text-2xl font-bold">WSUUP</h1>
+          <nav className="flex flex-col gap-3">
+            <a href="/" className="hover:text-gray-300">
+              Home
+            </a>
+            <a href="/profile" className="hover:text-gray-300">
+              Profile
+            </a>
+            <a href="/settings" className="hover:text-gray-300">
+              Settings
+            </a>
+          </nav>
+        </aside>
       </body>
     </html>
   );
