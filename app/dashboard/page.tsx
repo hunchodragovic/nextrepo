@@ -1,7 +1,12 @@
 import Link from "next/link";
-import React from "react";
 
-const Gang = () => {
+async function simulateSlowLoading() {
+  await new Promise((resolve) => setTimeout(resolve, 3000)); // 3 seconds delay
+}
+
+export default async function Gang() {
+  await simulateSlowLoading(); // Artificial delay
+
   return (
     <div>
       <h1>Take me to the users</h1>
@@ -51,6 +56,4 @@ const Gang = () => {
       </div>
     </div>
   );
-};
-
-export default Gang;
+}
